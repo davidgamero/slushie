@@ -11,3 +11,5 @@ class BudgetScreen extends React.Component {
     );
   }
 }
+
+export default BudgetScreen;

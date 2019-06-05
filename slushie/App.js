@@ -39,6 +39,14 @@ export default class App extends Component<Props> {
   }
 }
 
+const TabNavigator = createBottomTabNavigator({
+  Home: HomeScreen,
+  Budget : BudgetScreen,
+});
+
+export default createAppContainer(TabNavigator);
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

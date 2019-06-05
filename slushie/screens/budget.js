@@ -1,12 +1,19 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
+import {
+  Text,
+  View,
+  Button
+} from 'react-native';
 
 class BudgetScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Let's budget ladies!</Text>
+        {/* other code from before here */}
+        <Button
+          title="Lets Budget Ladies!"
+          onPress={() => this.props.navigation.navigate('Home')}
+        />
       </View>
     );
   }

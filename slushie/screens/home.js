@@ -11,6 +11,7 @@ import Pie from '../d3chart/charts/Pie';
 import Theme from '../d3chart/theme';
 import data from '../d3chart/data';
 import LineChart from "react-native-responsive-linechart";
+import Balance from '../balance';
 
 class HomeScreen extends React.Component {
   constructor(props) {
@@ -77,7 +78,7 @@ class HomeScreen extends React.Component {
           </View>
           <View style={styles.cardContainer}>
             <View style={styles.card}>
-              <Text>balances here</Text>
+              <Balance/>
             </View>
           </View>
         </ScrollView>

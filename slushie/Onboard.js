@@ -92,7 +92,8 @@ const slides = [
   {
     key: 's4',
     title: 'How Slushie Can Help',
-    text: 'Slushie will help you move your idle money into accounts that will help it grow bigger and faster.',
+    //text: 'Slushie will help you move your idle money into accounts that will help it grow bigger and faster.',
+    text: 'Slushie helps you visualize your transactions and where your money is going, while also assisting you in moving your idle money into accounts that will make it grow faster.',
     image: require('./Images/LightBulb.png'),
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,

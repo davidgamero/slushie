@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Platform } from 'react-native';
 
 import AppIntroSlider from 'react-native-app-intro-slider';
+import colors from './colors';
 
 export default class Onboard extends Component {
 
@@ -26,8 +27,6 @@ export default class Onboard extends Component {
     
   }
 }
-const purple = '#C066CC'
-const white = '#FFFFFF'
 const styles = StyleSheet.create({
 
   mainapp: {
@@ -41,11 +40,12 @@ const styles = StyleSheet.create({
     color: white,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 20,
+    marginTop: 80,
   },
   textWhite: {
     color: white,
     fontSize: 20,
+    marginBottom: 70,
   },
   image: {
     width: 200,
@@ -68,7 +68,7 @@ const slides = [
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
     imageStyle: styles.image,
-    backgroundColor: purple,
+    backgroundColor: colors.accent,
   },
   {
     key: 's2',
@@ -78,7 +78,7 @@ const slides = [
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
     imageStyle: styles.image,
-    backgroundColor: purple,
+    backgroundColor: colors.accent,
   },
   {
     key: 's3',
@@ -88,7 +88,7 @@ const slides = [
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
     imageStyle: styles.bigImage,
-    backgroundColor: purple,
+    backgroundColor: colors.accent,
   },
   {
     key: 's4',
@@ -98,6 +98,7 @@ const slides = [
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
     imageStyle: styles.image,
-    backgroundColor: purple,
+    backgroundColor: colors.accentccccccjeivnibddtgehhghgtcrienjtjkjfvnhhlffdi
+    ,
   }
 ];

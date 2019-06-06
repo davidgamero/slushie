@@ -33,14 +33,14 @@ class BudgetScreen extends React.Component {
       }
       return a;
   }
+
   render() {
     const height = 200;
     const width = 300;
 
     return (
       <ScrollView style={styles.pageContainer}>
-        <Text style={styles.pageSubTitle}>Welcome back,</Text>
-        <Text style={styles.pageTitle}>Jason</Text>
+        <Text style={styles.pageSubTitle}>Your Budget</Text>
         <View>
           <Pie
             pieWidth={150}
@@ -53,7 +53,7 @@ class BudgetScreen extends React.Component {
         </View>
         <View style={styles.cardContainer}>
           <View style={styles.card}>
-            <Text style={styles.chart_title}>{data.spendingsLastMonth[this.state.activeIndex].name} Spending Ti meline</Text>
+            <Text style={styles.chart_title}>{data.spendingsLastMonth[this.state.activeIndex].name} Spending Timeline</Text>
             <AreaSpline
               width={width}
               height={height}

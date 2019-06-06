@@ -29,7 +29,7 @@ export default {
   ],
 
   spendingsLastMonth: [
-    {"number":  8, "name": 'Fun activities'},
+    {"number":  8, "name": 'Entertainment'},
     {"number": 7, "name": 'Dog'},
     {"number": 16, "name": 'Food'},
     {"number": 23, "name": 'Car'},

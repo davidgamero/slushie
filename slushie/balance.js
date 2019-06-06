@@ -15,7 +15,7 @@ class Balance extends React.Component {
         </Text>
 
         <Text style={styles.chart_title} >
-            Savings Balance:      $23,101.83
+            Savings Balance:       $23,101.83
         </Text>
       </View>
       

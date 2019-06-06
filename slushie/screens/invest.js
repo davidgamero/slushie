@@ -4,6 +4,7 @@ import {
   View,
   Button
 } from 'react-native';
+import TxnTable from '../txnTable';
 
 class InvestScreen extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class InvestScreen extends React.Component {
           onPress={() => this.props.navigation.navigate('Home')}
         />
       </View>
+      
     );
   }
 }

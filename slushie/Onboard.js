@@ -51,6 +51,11 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
     resizeMode: 'contain'
+  },
+  bigImage:{
+    width: 300,
+    height: 300,
+    resizeMode: 'contain'
   }
 });
 
@@ -58,7 +63,7 @@ const slides = [
   {
     key: 's1',
     title: 'Did you know?',
-    text: '*Insert interesting investment fact*',
+    text: 'If you invested $2 a day at age 20, you would be a millionaire by age 65.',
     image: require('./Images/Coin.png'),
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
@@ -67,12 +72,9 @@ const slides = [
   },
   {
     key: 's2',
-    title: 'Compound Interest',
-    text: '*Explain how compound interest effects money*',
-    image: {
-      uri:
-        'https://imgur.com/BVQ79rh.png',
-    },
+    title: 'Idle Money',
+    text: 'Idle money in your checking account is not earning you more money.',
+    image: require('./Images/Cash.png'),
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
     imageStyle: styles.image,
@@ -80,23 +82,19 @@ const slides = [
   },
   {
     key: 's3',
-    title: 'Idle Money',
-    text: '*Explain how checking accounts have low interest rates and other accounts have higher*',
-    image: {
-      uri: 'https://imgur.com/RPI8wie.png',
-    },
+    title: 'Compound Interest',
+    text: 'If you save more money sooner, compound interest will make it grow bigger and faster.',
+    image: require('./Images/CashStack.png'),
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
-    imageStyle: styles.image,
+    imageStyle: styles.bigImage,
     backgroundColor: purple,
   },
   {
     key: 's4',
-    title: 'Levels of Investment',
-    text: '*Explain levels of investment*',
-    image: {
-      uri: 'https://imgur.com/f1GhQo1.png',
-    },
+    title: 'How Slushie Can Help',
+    text: 'Slushie will help you move your idle money into accounts that will help it grow bigger and faster.',
+    image: require('./Images/LightBulb.png'),
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
     imageStyle: styles.image,

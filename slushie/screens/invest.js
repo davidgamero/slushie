@@ -60,7 +60,7 @@ class InvestScreen extends React.Component {
               in your checking account. 
             </Text>
 
-            <BigButton label="Transfer  Now"/>
+            <BigButton label="Head to Your Account"/>
           </View>
         </View>
         <View style={styles.cardContainer}>

@@ -103,8 +103,8 @@ styles = {
         backgroundColor: colors.accent,
         paddingVertical: 15,
         textAlign: 'center',
-        borderRadius: 30,
-        marginTop: 20
+        borderRadius: 20,
+        marginTop: 12,
       },
       bigButtonText: {
         color: 'white',

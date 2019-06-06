@@ -105,6 +105,9 @@ styles = {
         textAlign: 'center',
         borderRadius: 20,
         marginTop: 12,
+        shadowOpacity: 0.8,
+        shadowColor: 'lightgray',
+        shadowOffset: { width: 3, height: 3 },
       },
       bigButtonText: {
         color: 'white',

@@ -4,6 +4,7 @@ import {
   View,
   Button
 } from 'react-native';
+import styles from '../styles';
 
 
 class HomeScreen extends React.Component {
@@ -12,8 +13,11 @@ class HomeScreen extends React.Component {
     
 
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        
+      <View style={styles.pageContainer}>
+        <View style={styles.cardContainer}>
+          <Text>Waddup in a card</Text>
+        </View>
+
       </View>
     );
   }

@@ -8,6 +8,7 @@ import AreaSpline from '../d3chart/charts/AreaSpline';
 import Pie from '../d3chart/charts/Pie';
 import Theme from '../d3chart/theme';
 import data from '../d3chart/data';
+import styles from '../styles';
 
 class BudgetScreen extends React.Component {
   constructor(props) {
@@ -33,50 +34,30 @@ class BudgetScreen extends React.Component {
   }
   render() {
     const height = 200;
-    const width = 500;
+    const width = 300;
 
     return (
-      <View style={styles.container} >
-        <Pie
-          pieWidth={150}
-          pieHeight={150}
-          onItemSelected={this._onPieItemSelected}
-          colors={Theme.colors}
-          width={width}
-          height={height}
-          data={data.spendingsLastMonth} />
-        <Text style={styles.chart_title}>Spending per year in {data.spendingsLastMonth[this.state.activeIndex].name}</Text>
-        <AreaSpline
-          width={width}
-          height={height}
-          data={this.state.spendingsPerYear}
-          color={Theme.colors[this.state.activeIndex]} />
-        <Button
-          title="Go Home"
-          onPress={() => this.props.navigation.navigate('Home')}
-        />
-
-        
+      <View style={styles.pageContainer}>
+        <View style={styles.cardContainer}>
+          <Pie
+            pieWidth={150}
+            pieHeight={150}
+            onItemSelected={this._onPieItemSelected}
+            colors={Theme.colors}
+            width={width}
+            height={height}
+            data={data.spendingsLastMonth} />
+        </View>
+        <View style={styles.cardContainer}>
+          <Text style={styles.chart_title}>Spending per year in {data.spendingsLastMonth[this.state.activeIndex].name}</Text>
+          <AreaSpline
+            width={width}
+            height={height}
+            data={this.state.spendingsPerYear}
+            color={Theme.colors[this.state.activeIndex]} />
+        </View>
       </View>
     );
-  }
-};
-
-
-const styles = {
-  container: {
-    backgroundColor:'whitesmoke',
-    marginTop: 21,
-  },
-  chart_title : {
-    paddingTop: 15,
-    textAlign: 'center',
-    paddingBottom: 5,
-    paddingLeft: 5,
-    fontSize: 18,
-    backgroundColor:'white',
-    color: 'grey',
-    fontWeight:'bold',
   }
 };
 

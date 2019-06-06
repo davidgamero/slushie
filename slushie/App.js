@@ -8,6 +8,7 @@ import HomeScreen from './screens/home';
 import BudgetScreen from './screens/budget';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import InvestScreen from './screens/invest';
+import colors from './colors';
 
 const TabNavigator = createBottomTabNavigator({
   Invest: InvestScreen,
@@ -35,9 +36,10 @@ const TabNavigator = createBottomTabNavigator({
       },
     }),
     tabBarOptions: {
-      activeTintColor: 'tomato',
+      activeTintColor: colors.primary,
       inactiveTintColor: 'gray',
     },
+    initialRouteName: 'Home',
   }
 );
 

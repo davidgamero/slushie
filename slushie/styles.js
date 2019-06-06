@@ -38,7 +38,7 @@ styles = {
         textAlign: 'center',
         paddingBottom: 5,
         paddingLeft: 5,
-        fontSize: 20,
+        fontSize: 25,
         backgroundColor:'white',
         color: 'black',
         fontFamily: 'Avenir-Light',
@@ -54,6 +54,15 @@ styles = {
         fontFamily: 'Avenir-Light',
         textAlign: 'left',
     },
+    suggestion: {
+        fontFamily: 'Avenir-Light',
+        fontSize: 20,
+    },
+    suggestionAccent: {
+        fontFamily: 'Avenir-Medium',
+        color: colors.accent,
+        fontSize: 50,
+    },
     chart_title : {
         paddingTop: 5,
         textAlign: 'left',
@@ -64,6 +73,17 @@ styles = {
         color: "black",
         fontFamily: 'Avenir-Medium',
       },
+      investTitle: {
+        paddingTop: 10,
+        textAlign: 'left',
+        paddingBottom: 5,
+        paddingTop: 25,
+        paddingLeft: 28,
+        fontSize: 25,
+        backgroundColor:'white',
+        color: 'black',
+        fontFamily: 'Avenir-Medium',
+    },
       txRow : {
         width: '100%',
         height: 50,

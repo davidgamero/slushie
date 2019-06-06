@@ -5,7 +5,6 @@ import {
   Button,
   ScrollView
 } from 'react-native';
-import TxnTable from '../txnTable';
 import styles from '../styles';
 import LineChart from "react-native-responsive-linechart";
 
@@ -32,7 +31,7 @@ class InvestScreen extends React.Component {
 
     return (
       <ScrollView style={styles.pageContainer}>
-          <Text style={styles.pageSubTitle}>
+          <Text style={styles.investTitle}>
             Investing
           </Text>
         <View style={{alignContent: 'center',paddingLeft: 20}}>
@@ -41,10 +40,27 @@ class InvestScreen extends React.Component {
         </View>
         <View style={styles.cardContainer}>
           <View style={styles.card}>
-            <Text style={styles.chart_title}>
-                Your Transactions
+            <Text style={styles.suggestion}>
+              Based on your previous spending, Slushie recommends you move 
             </Text>
-            <TxnTable/>
+            <Text style={styles.suggestionAccent}>
+              $402.91
+            </Text>
+            <Text style={styles.suggestion}>
+              {'into your savings account. \nThis leaves you with'}
+            </Text>
+            <Text style={styles.suggestionAccent}>
+              $7824.54
+            </Text>
+            <Text style={styles.suggestion}>
+              in your checking account. 
+            </Text>
+
+          </View>
+        </View>
+        <View style={styles.cardContainer}>
+          <View style={styles.card}>
+            
           </View>
         </View>
 

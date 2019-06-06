@@ -10,6 +10,7 @@ import Pie from '../d3chart/charts/Pie';
 import Theme from '../d3chart/theme';
 import data from '../d3chart/data';
 import styles from '../styles';
+import TxnTable from '../txnTable';
 
 class BudgetScreen extends React.Component {
   constructor(props) {
@@ -59,6 +60,14 @@ class BudgetScreen extends React.Component {
               height={height}
               data={this.state.spendingsPerYear}
               color={Theme.colors[this.state.activeIndex]} />
+          </View>
+        </View>
+        <View style={styles.cardContainer}>
+          <View style={styles.card}>
+            <Text style={styles.chart_title}>
+                Recent Transactions
+            </Text>
+            <TxnTable/>
           </View>
         </View>
       </ScrollView>

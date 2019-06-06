@@ -77,7 +77,7 @@ class HomeScreen extends React.Component {
           </View>
           <View style={styles.cardContainer}>
             <View style={styles.card}>
-              <Text>hi</Text>
+              <Text>balances here</Text>
             </View>
           </View>
         </ScrollView>

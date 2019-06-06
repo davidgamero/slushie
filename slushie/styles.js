@@ -1,8 +1,11 @@
 import colors from './colors';
 
 styles = {
+    pageHeader: {
+        background: colors.background,
+    },
     pageContainer: {
-        backgroundColor: colors.primary,
+        backgroundColor: colors.background,
         paddingTop: 40,
         margin: 0,
         flex: 1,
@@ -11,11 +14,14 @@ styles = {
         color: 'white',
     },
     cardContainer: {
-        borderRadius: 20,
-        padding: 15,
-        marginHorizontal: 10,
-        marginTop: 10,
-        backgroundColor: colors.background,
+        borderRadius: 0,
+        padding: 8,
+        backgroundColor: colors.secondaryBackground,
+    },
+    card: {
+        padding: 10,
+        borderRadius: 5,
+        backgroundColor: colors.background
     },
     chart_title : {
         paddingTop: 15,
@@ -24,7 +30,7 @@ styles = {
         paddingLeft: 5,
         fontSize: 18,
         backgroundColor:'white',
-        color: 'grey',
+        color: colors.accent,
         fontWeight:'bold',
       }
 }

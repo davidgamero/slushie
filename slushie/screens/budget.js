@@ -38,7 +38,7 @@ class BudgetScreen extends React.Component {
 
     return (
       <View style={styles.pageContainer}>
-        <View style={styles.cardContainer}>
+        <View>
           <Pie
             pieWidth={150}
             pieHeight={150}
@@ -49,12 +49,14 @@ class BudgetScreen extends React.Component {
             data={data.spendingsLastMonth} />
         </View>
         <View style={styles.cardContainer}>
-          <Text style={styles.chart_title}>Spending per year in {data.spendingsLastMonth[this.state.activeIndex].name}</Text>
-          <AreaSpline
-            width={width}
-            height={height}
-            data={this.state.spendingsPerYear}
-            color={Theme.colors[this.state.activeIndex]} />
+          <View style={styles.card}>
+            <Text style={styles.chart_title}>Spending per year in {data.spendingsLastMonth[this.state.activeIndex].name}</Text>
+            <AreaSpline
+              width={width}
+              height={height}
+              data={this.state.spendingsPerYear}
+              color={Theme.colors[this.state.activeIndex]} />
+          </View>
         </View>
       </View>
     );

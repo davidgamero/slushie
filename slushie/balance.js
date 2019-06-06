@@ -11,11 +11,11 @@ class Balance extends React.Component {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={styles.chart_title} >
-            Checking Balance:     $12,500
+            Checking Balance:     $12,347.36
         </Text>
 
         <Text style={styles.chart_title} >
-            Savings Balance:     $23,500
+            Savings Balance:     $23,101.83
         </Text>
       </View>
       

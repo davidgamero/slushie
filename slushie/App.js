@@ -19,9 +19,9 @@ const TabNavigator = createBottomTabNavigator({
         let IconComponent = Ionicons;
         let iconName;
         if (routeName === 'Home') {
-          iconName = `ios-information-circle${focused ? '' : '-outline'}`;
+          iconName = `ios-home`;
         } else if (routeName === 'Budget') {
-          iconName = `ios-options`;
+          iconName = `ios-checkmark-circle`;
         }
 
         // You can return any component that you like here!

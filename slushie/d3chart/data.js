@@ -202,7 +202,7 @@ export default {
     {"year" : 2008, "value" : 42.8866553488},
     {"year" : 2011, "value" : 16.1370825945},
     {"year" : 2001, "value" : 65.8090096075}
-    ]    
+        
   ],
 
   spendingsLastMonth: [

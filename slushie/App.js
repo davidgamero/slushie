@@ -18,7 +18,7 @@ export default class App extends Component {
 
     componentWillMount() {
         this.setState({
-            showOnboard : true
+            showOnboard : false
         });
     }
 

@@ -75,6 +75,11 @@ class HomeScreen extends React.Component {
               <LineChart style={{ height: 150 }} config={config4} xLabels={xlabels4} data={data4} />
             </View>
           </View>
+          <View style={styles.cardContainer}>
+            <View style={styles.card}>
+              <Text>hi</Text>
+            </View>
+          </View>
         </ScrollView>
       </View>
     );

@@ -43,6 +43,17 @@ styles = {
         color: 'black',
         fontFamily: 'Avenir-Light',
     },
+    pageAccentSubTitle: {
+        paddingTop: 10,
+        textAlign: 'center',
+        paddingBottom: 5,
+        paddingLeft: 5,
+        fontSize: 20,
+        color:colors.accent,
+        backgroundColor: 'white',
+        fontFamily: 'Avenir-Light',
+        textAlign: 'left',
+    },
     chart_title : {
         paddingTop: 5,
         textAlign: 'left',

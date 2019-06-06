@@ -15,6 +15,7 @@ class InvestScreen extends React.Component {
           title="Invest in da breast!"
           onPress={() => this.props.navigation.navigate('Home')}
         />
+        <TxnTable/>
       </View>
       
     );

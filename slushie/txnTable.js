@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { Table, Row, Rows } from 'react-native-table-component';
 import data from './d3chart/data';
  
-export default class txnTable extends Component {
+export default class TxnTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +13,7 @@ export default class txnTable extends Component {
   }
 
   getData() {
-    txns = data.spendingsLastMonth; 
+    txns = data.tableData; 
     for(i = 0; i < 20; i++) {
         let row = []
         let date = txns[i].date;

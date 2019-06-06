@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import styles from '../styles';
 import LineChart from "react-native-responsive-linechart";
+import BigButton from '../bigButton';
 
 class InvestScreen extends React.Component {
 
@@ -56,6 +57,7 @@ class InvestScreen extends React.Component {
               in your checking account. 
             </Text>
 
+            <BigButton label="Transfer  Now"/>
           </View>
         </View>
         <View style={styles.cardContainer}>

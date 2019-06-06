@@ -94,6 +94,19 @@ styles = {
         borderBottomColor: 'gray',
         borderBottomWidth: 1,
         fontFamily: 'Avenir-Medium',
+      },
+      bigButton: {
+        width: '100%',
+        backgroundColor: colors.accent,
+        paddingVertical: 15,
+        textAlign: 'center',
+        borderRadius: 30,
+        marginTop: 20
+      },
+      bigButtonText: {
+        color: 'white',
+        fontSize: 20,
+        textAlign: 'center'
       }
 }
 

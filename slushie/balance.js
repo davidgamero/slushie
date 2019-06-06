@@ -11,7 +11,7 @@ class Balance extends React.Component {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={styles.chart_title} >
-            Checking Balance:     $8,227.45
+            Checking Balance:   $8,227.45
         </Text>
 
         <Text style={styles.chart_title} >

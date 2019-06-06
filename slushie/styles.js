@@ -52,6 +52,17 @@ styles = {
         backgroundColor:'white',
         color: "black",
         fontFamily: 'Avenir-Medium',
+      },
+      txRow : {
+        width: '100%',
+        height: 50,
+        fontSize: 14,
+        paddingVertical: 5,
+        display: 'flex',
+        flexDirection: 'row',
+        borderBottomColor: 'gray',
+        borderBottomWidth: 1,
+        fontFamily: 'Avenir-Medium',
       }
 }
 

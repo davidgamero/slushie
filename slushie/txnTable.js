@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  ScrollView,
+} from 'react-native';
 import { Table, Row, Rows } from 'react-native-table-component';
 import data from './d3chart/data';
+import styles from './styles';
  
 export default class TxnTable extends Component {
   constructor(props) {
@@ -43,14 +49,23 @@ export default class TxnTable extends Component {
     });
 
     const state = this.state;
+
+    const listItems = data.tableData.map((row,index) =>
+      <View style={styles.txRow} key={index}>
+        <View>
+          <Text>
+            {row.date.toString().padStart(12)  + row.amount.toString().padStart(15) + row.category.toString().padStart(25)}
+          </Text>
+        </View>
+      </View>
+    );
+
     return (
       <View style={tstyles.container}>
-        <Table borderStyle={{borderWidth: 2, borderColor: '#c8e1ff'}}>
-          <Row data={state.tableHead} style={tstyles.head} textStyle={tstyles.text}/>
-          <Rows data={state.tableData} textStyle={tstyles.text}/>
-        </Table>
+        <ScrollView>
+         {listItems}
+        </ScrollView>
       </View>
     )
   }
-
 }

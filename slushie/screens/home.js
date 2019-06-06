@@ -45,7 +45,7 @@ class HomeScreen extends React.Component {
       interpolation: "spline",
       line: { strokeColor: "#be2ddd", strokeWidth: 2 },
       yAxis: {
-        visible: true,
+        visible: false,
        // labelFormatter: v => Math.round(v),
       },
       xAxis: {

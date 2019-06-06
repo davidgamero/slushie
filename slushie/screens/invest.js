@@ -31,8 +31,8 @@ class InvestScreen extends React.Component {
 
     return (
       <ScrollView style={styles.pageContainer}>
-          <Text style={styles.investTitle}>
-            Investing
+          <Text style={styles.sidePageTitle}>
+            Your Investments
           </Text>
         <View style={{alignContent: 'center',paddingLeft: 20}}>
           
@@ -40,6 +40,9 @@ class InvestScreen extends React.Component {
         </View>
         <View style={styles.cardContainer}>
           <View style={styles.card}>
+          <Text style={styles.chart_title}>
+              Slushie's Suggestions
+            </Text>
             <Text style={styles.suggestion}>
               Based on your previous spending, Slushie recommends you move 
             </Text>

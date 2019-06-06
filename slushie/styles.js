@@ -57,11 +57,14 @@ styles = {
     suggestion: {
         fontFamily: 'Avenir-Light',
         fontSize: 20,
+        lineHeight: 40,
+        paddingLeft: 12,
     },
     suggestionAccent: {
         fontFamily: 'Avenir-Medium',
         color: colors.accent,
         fontSize: 50,
+        paddingLeft: 12,
     },
     chart_title : {
         paddingTop: 5,
@@ -73,12 +76,12 @@ styles = {
         color: "black",
         fontFamily: 'Avenir-Medium',
       },
-      investTitle: {
+      sidePageTitle: {
         paddingTop: 10,
         textAlign: 'left',
         paddingBottom: 5,
-        paddingTop: 25,
-        paddingLeft: 28,
+        paddingTop: 40,
+        paddingLeft: 24,
         fontSize: 25,
         backgroundColor:'white',
         color: 'black',

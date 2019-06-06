@@ -41,7 +41,7 @@ class BudgetScreen extends React.Component {
 
     return (
       <ScrollView style={styles.pageContainer}>
-        <Text style={styles.pageSubTitle}>Your Budget</Text>
+        <Text style={styles.sidePageTitle}>Your Budget</Text>
         <View>
           <Pie
             pieWidth={150}

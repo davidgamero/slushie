@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, Platform } from 'react-native';
 
 import AppIntroSlider from 'react-native-app-intro-slider';
 
-export default class App extends Component {
+export default class Onboard extends Component {
 
   constructor(props) {
     super(props);
@@ -12,7 +12,9 @@ export default class App extends Component {
 
   // Change to go back to other screen
   onDone = () => {
-    
+    this.props.setState( {
+      showOnboard: false,
+  })
   };
   render() {
       return (

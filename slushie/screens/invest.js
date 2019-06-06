@@ -3,7 +3,7 @@ import {
   Text,
   View,
   Button,
-  ScrollView
+  ScrollView,
 } from 'react-native';
 import styles from '../styles';
 import LineChart from "react-native-responsive-linechart";

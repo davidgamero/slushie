@@ -2,20 +2,20 @@ import React from 'react';
 import {
   Text,
   View,
-  Button
+  TouchableOpacity
 } from 'react-native';
 import styles from './styles';
 
 class BigButton extends React.Component {
   render() {
     return (
-      <View style={styles.bigButton}>
-        <Text style={styles.bigButtonText} >
-            {this.props.label}
-        </Text>
-
-      </View>
-      
+        <TouchableOpacity>
+            <View style={styles.bigButton}>
+                <Text style={styles.bigButtonText} >
+                    {this.props.label}
+                </Text>
+            </View>
+        </TouchableOpacity>
     );
   }
 }

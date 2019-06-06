@@ -6,7 +6,6 @@ import {
   ScrollView
 } from 'react-native';
 import styles from '../styles';
-import AreaSpline from '../d3chart/charts/AreaSpline';
 import Pie from '../d3chart/charts/Pie';
 import Theme from '../d3chart/theme';
 import data from '../d3chart/data';

@@ -206,11 +206,11 @@ export default {
   ],
   spendingsLastMonth: [
     {"number":  8, "name": 'Entertainment'},
-    {"number": 7, "name": 'Dog'},
-    {"number": 16, "name": 'Food'},
-    {"number": 23, "name": 'Car'},
-    {"number": 42, "name": 'Rent'},
-    {"number":  4, "name": 'Misc'},
+    {"number": 7, "name": 'Shopping'},
+    {"number": 16, "name": 'Auto & Transport'},
+    {"number": 23, "name": 'Food & Dining'},
+    {"number": 42, "name": 'Fees & Charges'},
+    {"number":  4, "name": 'Other'},
   ],
   tableData: [
     { "date" : "2019-02-01", "amount" : 152.02, "category" : "Fees & Charges" },

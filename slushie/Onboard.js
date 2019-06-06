@@ -11,7 +11,6 @@ export default class Onboard extends Component {
     super(props);
   }
 
-  // Change to go back to other screen
   onDone = () => {
     this.props.setState( {
       showOnboard: false,
@@ -37,13 +36,13 @@ const styles = StyleSheet.create({
   },
   titleWhite: {
     fontSize: 26,
-    color: white,
+    color: colors.white,
     fontWeight: 'bold',
     textAlign: 'center',
     marginTop: 80,
   },
   textWhite: {
-    color: white,
+    color: colors.white,
     fontSize: 20,
     marginBottom: 70,
   },
@@ -98,7 +97,7 @@ const slides = [
     titleStyle: styles.titleWhite,
     textStyle: styles.textWhite,
     imageStyle: styles.image,
-    backgroundColor: colors.accentccccccjeivnibddtgehhghgtcrienjtjkjfvnhhlffdi
+    backgroundColor: colors.accent
     ,
   }
 ];

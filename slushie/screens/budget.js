@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Text,
   View,
-  Button
+  Button,
+  ScrollView,
 } from 'react-native';
 import AreaSpline from '../d3chart/charts/AreaSpline';
 import Pie from '../d3chart/charts/Pie';
@@ -37,7 +38,9 @@ class BudgetScreen extends React.Component {
     const width = 300;
 
     return (
-      <View style={styles.pageContainer}>
+      <ScrollView style={styles.pageContainer}>
+        <Text style={styles.pageSubTitle}>Welcome back,</Text>
+        <Text style={styles.pageTitle}>Jason</Text>
         <View>
           <Pie
             pieWidth={150}
@@ -50,7 +53,7 @@ class BudgetScreen extends React.Component {
         </View>
         <View style={styles.cardContainer}>
           <View style={styles.card}>
-            <Text style={styles.chart_title}>Spending per year in {data.spendingsLastMonth[this.state.activeIndex].name}</Text>
+            <Text style={styles.chart_title}>{data.spendingsLastMonth[this.state.activeIndex].name} Spending Ti meline</Text>
             <AreaSpline
               width={width}
               height={height}
@@ -58,7 +61,7 @@ class BudgetScreen extends React.Component {
               color={Theme.colors[this.state.activeIndex]} />
           </View>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 };

@@ -15,7 +15,7 @@ styles = {
     },
     cardContainer: {
         borderRadius: 0,
-        padding: 8,
+        padding: 4,
         backgroundColor: colors.secondaryBackground,
     },
     card: {
@@ -23,15 +23,35 @@ styles = {
         borderRadius: 5,
         backgroundColor: colors.background
     },
-    chart_title : {
-        paddingTop: 15,
+    pageTitle: {
+        paddingTop: 5,
         textAlign: 'center',
+        paddingBottom: 5,
+        paddingLeft: 5,
+        fontSize: 60,
+        backgroundColor:'white',
+        color: 'black',
+        fontFamily: 'Avenir-Medium',
+    },
+    pageSubTitle: {
+        paddingTop: 10,
+        textAlign: 'center',
+        paddingBottom: 5,
+        paddingLeft: 5,
+        fontSize: 20,
+        backgroundColor:'white',
+        color: 'black',
+        fontFamily: 'Avenir-Light',
+    },
+    chart_title : {
+        paddingTop: 5,
+        textAlign: 'left',
         paddingBottom: 5,
         paddingLeft: 5,
         fontSize: 18,
         backgroundColor:'white',
-        color: colors.accent,
-        fontWeight:'bold',
+        color: "black",
+        fontFamily: 'Avenir-Medium',
       }
 }
 

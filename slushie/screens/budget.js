@@ -60,6 +60,7 @@ class BudgetScreen extends React.Component {
               height={height}
               data={this.state.spendingsPerYear}
               color={Theme.colors[this.state.activeIndex]} />
+              <Text>     May     Jun     Jul     Aug     Sep    Oct    Nov</Text>
           </View>
         </View>
         <View style={styles.cardContainer}>

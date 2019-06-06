@@ -71,7 +71,7 @@ class HomeScreen extends React.Component {
           </View>
           <View style={styles.cardContainer}>
             <View style={styles.card}>
-              <Text style={styles.chart_title}>Spending Timeline</Text>
+              <Text style={styles.chart_title}>Your Slushie Investments</Text>
               <LineChart style={{ height: 150 }} config={config4} xLabels={xlabels4} data={data4} />
             </View>
           </View>
